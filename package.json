@@ -1,0 +1,25 @@
+{
+  "name": "hosting-video-in-nextjs",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "cloudinary": "^1.25.2",
+    "cloudinary-core": "2.11.3",
+    "cloudinary-react": "1.7.0",
+    "cloudinary-video-player": "1.5.3",
+    "dotenv": "^10.0.0",
+    "next": "latest",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "description": "Add video to next.js and deploying on netlify.  Look at using HTML5 Embed Video element and Cloudinary Video player."
+}
