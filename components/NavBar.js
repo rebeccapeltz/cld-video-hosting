@@ -10,13 +10,23 @@ export default function NavBar(props) {
             </Link>
           </li>
           <li>
-            <Link href="/small_abr">
-              <a className={props.navActive === "smallabr" ? "active" : ""}>Small ABR</a>
+            <Link href="/less_than_one_minute">
+              <a className={props.navActive === "lessthanone" ? "active" : ""}>Less than 1 minute</a>
             </Link>
           </li>
           <li>
-            <Link  href="/large_abr">
-              <a className={props.navActive === "largeabr" ? "active" : ""}>Large ABR</a>
+            <Link  href="/thirty_minutes">
+              <a className={props.navActive === "thirtyminutes" ? "active" : ""}>Thirty Minutes</a>
+            </Link>
+          </li>
+          <li>
+            <Link  href="/greater_than_one_hour">
+              <a className={props.navActive === "greaterthanonehour" ? "active" : ""}>Greater than 1 hour</a>
+            </Link>
+          </li>
+          <li>
+            <Link  href="/internet_archive">
+              <a className={props.navActive === "internetarchive" ? "active" : ""}>Internet Archive</a>
             </Link>
           </li>
           <li>
