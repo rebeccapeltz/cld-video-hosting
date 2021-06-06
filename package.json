@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "post-update": "yarn upgrade --latest"
+    "post-update": "npm upgrade --latest"
   },
   "dependencies": {
     "cloudinary": "^1.25.2",
