@@ -6,3 +6,9 @@ React Video Component.
 
 
 ## Deploy to Netlify
+
+https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/
+
+```bash
+ntl init
+```
