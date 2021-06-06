@@ -1,11 +1,11 @@
 import Head from "next/head";
 import dynamic from "next/dynamic"; //add
-import Link from "next/link";
+import NavBar from "../components/NavBar";
 
 
-const DynamicVideo = dynamic(() => import("../components/CldVideoPlayer"), {
-  ssr: false,
-});
+// const DynamicVideo = dynamic(() => import("../components/CldVideoPlayer"), {
+//   ssr: false,
+// });
 
 const DynamicCldReact = dynamic(() => import("../components/VideoEmbed"), {
   ssr: false,
@@ -21,32 +21,15 @@ export default function IndexPage() {
 
       <header>
         <h1>Video Hosting</h1>
-        <ul>
-          <li>
-            <Link href="/">
-              <a className="active">Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/small_abr">
-              <a>Small ABR</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/large_abr">
-              <a >Large ABR</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </li>
-        </ul>
+        <NavBar navActive="home" />
       </header>
 
      
       <section className="container">
+        <div className="vp">
+          <h2>Small Video HTML Video Embed</h2>
+          <DynamicCldReact cloudName="cloudinary-training" publicId="surfing" />
+        </div>
         <div className="vp">
           <h2>Small Video HTML Video Embed</h2>
           <DynamicCldReact cloudName="cloudinary-training" publicId="surfing" />
