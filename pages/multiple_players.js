@@ -8,7 +8,7 @@ const DynamicVideo = dynamic(() => import("../components/CldVideoPlayers"), {
 
 export default function MultiplePlayers() {
   return (
-    <div>
+    <div className="page">
       <Head>
         <title>Multiple Video Players</title>
         <link rel="icon" href="/favicon.ico" />

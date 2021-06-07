@@ -75,3 +75,7 @@ li a:hover:not(.active) {
   margin: 10px auto;
   text-align: center;
 }
+
+.std {
+  text-align: left;
+}

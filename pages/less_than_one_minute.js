@@ -8,7 +8,7 @@ const DynamicVideo = dynamic(() => import("../components/CldABR"), {
 
 export default function less_than_one_minute() {
   return (
-    <div>
+    <div className="page">
       <Head>
         <title>Video Player with Cloudinary</title>
         <link rel="icon" href="/favicon.ico" />

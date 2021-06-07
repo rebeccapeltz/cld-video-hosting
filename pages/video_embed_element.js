@@ -8,14 +8,14 @@ const DynamicCldReact = dynamic(() => import("../components/VideoEmbed"), {
 
 export default function IndexPage() {
   return (
-    <div>
+    <div className="page">
       <Head>
         <title>Video Player with Cloudinary</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
         <h1>Video Hosting</h1>
-        <NavBar navActive="home" />
+        <NavBar navActive="videoembedelement" />
       </header>
       <h2>HTML5 Video Embed Element</h2>
       The Video embed element is created by adding <em>source</em> tags with

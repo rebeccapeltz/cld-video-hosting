@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar";
 
 export default function About() {
   return (
-    <div>
+    <div className="page">
       <Head>
         <title>Video Player with Cloudinary</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,7 +18,7 @@ export default function About() {
       <header>
         <h1>About</h1>
         <NavBar navActive="about" />
-      <p>This is a sample application to show different techniques for hosting video on a web
+      <p className="std">This is a sample application to show different techniques for hosting video on a web
         page.  
       </p>
       </header>
