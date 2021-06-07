@@ -3,9 +3,6 @@ import dynamic from "next/dynamic"; //add
 import NavBar from "../components/NavBar";
 
 
-// const DynamicVideo = dynamic(() => import("../components/CldVideoPlayer"), {
-//   ssr: false,
-// });
 
 const DynamicCldReact = dynamic(() => import("../components/VideoEmbed"), {
   ssr: false,

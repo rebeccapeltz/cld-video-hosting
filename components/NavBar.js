@@ -30,6 +30,11 @@ export default function NavBar(props) {
             </Link>
           </li>
           <li>
+            <Link  href="/multiple_players">
+              <a className={props.navActive === "multipleplayers" ? "active" : ""}>MulitplePlayers</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/about">
               <a className={props.navActive === "about" ? "active" : ""}>About</a>
             </Link>

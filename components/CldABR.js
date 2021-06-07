@@ -3,7 +3,7 @@ import "cloudinary-video-player/dist/cld-video-player.min.js";
 import "cloudinary-video-player/dist/cld-video-player.min.css";
 
 import { useEffect } from "react";
-const CldVideoPlayer = (props) => {
+const CldABR = (props) => {
   const cld = new Cloudinary({ cloud_name: props.cloudName });
 
   useEffect(() => {
@@ -44,4 +44,4 @@ const CldVideoPlayer = (props) => {
 
   return <video className="cld-video-player" />;
 };
-export default CldVideoPlayer;
+export default CldABR;
