@@ -6,7 +6,7 @@ const DynamicVideo = dynamic(() => import("../components/CldABR"), {
   ssr: false,
 });
 
-export default function less_than_one_minute() {
+export default function internet_archive() {
   return (
     <div>
       <Head>
@@ -15,7 +15,7 @@ export default function less_than_one_minute() {
       </Head>
 
       <header>
-        <h1>30 Minutes using ABR</h1>
+        <h1>30 Minutes no ABR</h1>
         <NavBar navActive="internetarchive" />
       </header>
 

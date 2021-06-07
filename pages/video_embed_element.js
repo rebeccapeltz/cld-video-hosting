@@ -24,18 +24,18 @@ export default function IndexPage() {
       SDK](https://cloudinary.com/documentation/react_integration) to generate
       these element.
       <section className="vid-container">
-        <div className="vp">
+        <div className="ve">
           <h3>Less than 1 minute</h3>
           <DynamicCldReact cloudName="cloudinary-training" publicId="surfing" />
         </div>
-        <div className="vp">
+        <div className="ve">
           <h3>30 Minutes</h3>
           <DynamicCldReact
             cloudName="cloudinary-marketing"
             publicId="podcast/mx_matters/mx-matters-ep7-cli"
           />
         </div>
-        <div className="vp">
+        <div className="ve">
           <h3>Greater than 1 hour</h3>
           <DynamicCldReact
             cloudName="cloudinary-marketing"

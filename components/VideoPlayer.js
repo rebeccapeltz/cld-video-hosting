@@ -3,7 +3,7 @@ import "cloudinary-video-player/dist/cld-video-player.min.js";
 import "cloudinary-video-player/dist/cld-video-player.min.css";
 
 import { useEffect } from "react";
-const CldABR = (props) => {
+const VideoPlayer = (props) => {
   const cld = new Cloudinary({ cloud_name: props.cloudName });
 
   useEffect(() => {
@@ -11,14 +11,13 @@ const CldABR = (props) => {
       sourceTypes: ["hls", "mp4"],
       muted: true,
       controls: true,
-      width: 800,
       sourceTransformation: {
         hls: [{ streaming_profile: "hd" }],
         mp4: [{ quality: "auto" }],
       },
-      playbackRates: [0.5, 1, 1.5, 2]
+      playbackRates: [0.5, 1, 1.5, 2],
     };
-    const videoPlayers = cld.videoPlayers(".cld-video-player", options);
+    const videoPlayer = cld.videoPlayer(props.domId, options);
     // {
     //   publicId: props.publicId,
     //   // fluid: true,
@@ -40,9 +39,9 @@ const CldABR = (props) => {
     //   },
     // ],
     // });
-    videoPlayers[0].source(props.publicId);
+    videoPlayer.source(props.publicId);
   });
 
-  return <video className="cld-video-player" />;
+  return <video className="cld-video-player" id={props.domId}/>;
 };
-export default CldABR;
+export default VideoPlayer;

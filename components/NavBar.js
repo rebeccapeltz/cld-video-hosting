@@ -15,6 +15,11 @@ export default function NavBar(props) {
             </Link>
           </li>
           <li>
+            <Link  href="/video_player_time">
+              <a className={props.navActive === "videoplayertime" ? "active" : ""}>Video Player</a>
+            </Link>
+          </li>
+          {/* <li>
             <Link href="/less_than_one_minute">
               <a className={props.navActive === "lessthanone" ? "active" : ""}>Less than 1 minute</a>
             </Link>
@@ -28,7 +33,7 @@ export default function NavBar(props) {
             <Link  href="/greater_than_one_hour">
               <a className={props.navActive === "greaterthanonehour" ? "active" : ""}>Greater than 1 hour</a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link  href="/internet_archive">
               <a className={props.navActive === "internetarchive" ? "active" : ""}>Internet Archive</a>
