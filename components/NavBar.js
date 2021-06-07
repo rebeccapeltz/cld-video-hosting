@@ -10,6 +10,11 @@ export default function NavBar(props) {
             </Link>
           </li>
           <li>
+            <Link href="/video_embed_element">
+              <a className={props.navActive === "videoembedelement" ? "active" : ""}>Video Embed Element</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/less_than_one_minute">
               <a className={props.navActive === "lessthanone" ? "active" : ""}>Less than 1 minute</a>
             </Link>

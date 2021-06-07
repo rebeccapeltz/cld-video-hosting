@@ -11,11 +11,10 @@ const CldVideoPlayers = (props) => {
     const options = {
       muted: true,
       controls: true,
-      width: "800",
-      height: "600",
-      crop: "fill",
+      width:"300",
+      height:"200",
+      crop:"fill"
     };
-    debugger;
     const players = cld.videoPlayers(".cld-video-player", options);
     // {
     // fluid: true,
@@ -38,7 +37,6 @@ const CldVideoPlayers = (props) => {
     // ],
     // }
     // );
-    debugger;
     // players[0].source(publicIds[0]);
     players.forEach((player, index) => {
       player.source(publicIds[index])
@@ -46,14 +44,20 @@ const CldVideoPlayers = (props) => {
   });
 
   return (
-    <div>
+    <section className="vid-container">
       <div>
+        <h3>Video 1</h3>
+        <div>
         <video className="cld-video-player" />
+        </div>
       </div>
       <div>
+      <h3>Video 2</h3>
+        <div>
         <video className="cld-video-player" />
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 export default CldVideoPlayers;
