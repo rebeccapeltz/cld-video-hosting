@@ -16,6 +16,9 @@ const CldABR = (props) => {
         mp4: [{ quality: "auto" }],
       },
       playbackRates: [0.5, 1, 1.5, 2],
+      width: "800",
+      height: "600",
+      crop: "fill",
     };
     const videoPlayers = cld.videoPlayers(".cld-video-player", options);
     // {
@@ -27,17 +30,17 @@ const CldABR = (props) => {
     //   width:"800",
     //   height:"600",
     //   crop:"fill",
-      // transformation: [
-      //   {
-      //     overlay: "video-logo",
-      //     format: "png",
-      //     width: 100,
-      //     color: "white",
-      //     gravity: "north_east",
-      //     x: 5,
-      //     y: 5,
-      //   },
-      // ],
+    // transformation: [
+    //   {
+    //     overlay: "video-logo",
+    //     format: "png",
+    //     width: 100,
+    //     color: "white",
+    //     gravity: "north_east",
+    //     x: 5,
+    //     y: 5,
+    //   },
+    // ],
     // });
     videoPlayers[0].source(props.publicId);
   });
