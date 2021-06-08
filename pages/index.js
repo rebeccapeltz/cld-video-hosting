@@ -24,7 +24,7 @@ export default function IndexPage() {
         The graphic helps to show the relationship between codec, containers,
         and browsers.
       </p>
-      <CloudinaryContext cloud_name="cloudinary-training">
+      <CloudinaryContext cloud_name="cloudinary-training" secure="true">
         <Image publicId="video-hosting/ccb" alt="Codecs, Containers, and Browsers">
           <Transformation
             width="800"
