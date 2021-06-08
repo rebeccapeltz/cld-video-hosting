@@ -8,7 +8,7 @@ const CldABR = (props) => {
 
   useEffect(() => {
     const options = {
-      sourceTypes: ["hls", "mp4"],
+      sourceTypes: ["vp9","hls", "mp4"],
       muted: true,
       controls: true,
       width: 800,

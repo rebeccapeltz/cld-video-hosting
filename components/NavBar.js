@@ -10,6 +10,11 @@ export default function NavBar(props) {
             </Link>
           </li>
           <li>
+            <Link href="/sandbox_compare">
+              <a className={props.navActive === "sandboxcompare" ? "active" : ""}>Code Sandbox</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/video_embed_element">
               <a className={props.navActive === "videoembedelement" ? "active" : ""}>Video Embed Element</a>
             </Link>
