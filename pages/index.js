@@ -25,7 +25,7 @@ export default function IndexPage() {
         and browsers.
       </p>
       <CloudinaryContext cloud_name="cloudinary-training" secure="true">
-        <Image publicId="video-hosting/codes-containers-browsers_2" alt="Codecs, Containers, and Browsers">
+        <Image publicId="video-hosting/codes-containers-browsers_4" alt="Codecs, Containers, and Browsers">
           <Transformation
             width="800"
             height="600"
