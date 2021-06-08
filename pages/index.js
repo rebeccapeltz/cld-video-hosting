@@ -2,7 +2,6 @@ import Head from "next/head";
 import NavBar from "../components/NavBar";
 import {
   Image,
-  Video,
   Transformation,
   CloudinaryContext,
 } from "cloudinary-react";
@@ -24,15 +23,20 @@ export default function IndexPage() {
       <p className="desc">
         The graphic helps to show the relationship between codec, containers,
         and browsers.
-        <CloudinaryContext cloud_name="cloudinary-training">
-          <Image publicId="video-hosting/codecs-containers-browsers">
-
-          <Transformation width="800" height="600" gravity="auto" crop="fill" />
-
-          </Image>
-        </CloudinaryContext>
-        <Image />
       </p>
+      <CloudinaryContext cloud_name="cloudinary-training">
+        <Image publicId="video-hosting/ccb" alt="Codecs, Containers, and Browsers">
+          <Transformation
+            width="800"
+            height="600"
+            quality="100"
+            crop="limit"
+            fetch_format="auto"
+            dpr="2.0"
+          />
+        </Image>
+      </CloudinaryContext>
+      <Image />
     </div>
   );
 }

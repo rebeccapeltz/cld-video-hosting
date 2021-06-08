@@ -9,10 +9,6 @@ export default function About() {
       <Head>
         <title>Video Player with Cloudinary</title>
         <link rel="icon" href="/favicon.ico" />
-        {/* <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat"
-          rel="stylesheet"
-        /> */}
       </Head>
 
       <header>
