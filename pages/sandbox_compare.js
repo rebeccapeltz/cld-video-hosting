@@ -2,7 +2,6 @@ import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Iframe from "../components/Iframe";
 
-
 export default function IndexPage() {
   const code = `<iframe src="https://codesandbox.io/embed/cld-advanced-concepts-training-video-player-6h3k3?fontsize=14&hidenavigation=1&theme=light"
   style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -14,7 +13,7 @@ export default function IndexPage() {
     <div className="page">
       <Head>
         <title>Hosting Video</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <header>
@@ -43,8 +42,6 @@ export default function IndexPage() {
       <div className="sandbox ">
         <Iframe iframe={code} />`
       </div>
-
-     
     </div>
   );
 }

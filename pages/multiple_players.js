@@ -1,5 +1,5 @@
 import Head from "next/head";
-import dynamic from "next/dynamic"; 
+import dynamic from "next/dynamic";
 import NavBar from "../components/NavBar";
 
 const DynamicVideo = dynamic(() => import("../components/CldVideoPlayers"), {
@@ -11,7 +11,7 @@ export default function MultiplePlayers() {
     <div className="page">
       <Head>
         <title>Multiple Video Players</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <header>
@@ -19,11 +19,10 @@ export default function MultiplePlayers() {
         <NavBar navActive="multipleplayers" />
       </header>
 
-        <DynamicVideo
-          cloudName="cloudinary-training"
-          publicIds="surfing,rooster"
-        />
-     
+      <DynamicVideo
+        cloudName="cloudinary-training"
+        publicIds="surfing,rooster"
+      />
     </div>
   );
 }

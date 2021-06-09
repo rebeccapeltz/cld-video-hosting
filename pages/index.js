@@ -1,17 +1,13 @@
 import Head from "next/head";
 import NavBar from "../components/NavBar";
-import {
-  Image,
-  Transformation,
-  CloudinaryContext,
-} from "cloudinary-react";
+import { Image, Transformation, CloudinaryContext } from "cloudinary-react";
 
 export default function IndexPage() {
   return (
     <div className="page">
       <Head>
         <title>Hosting Video</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <header>
@@ -25,7 +21,10 @@ export default function IndexPage() {
         and browsers.
       </p>
       <CloudinaryContext cloud_name="cloudinary-training" secure="true">
-        <Image publicId="video-hosting/codes-containers-browsers_4" alt="Codecs, Containers, and Browsers">
+        <Image
+          publicId="video-hosting/codes-containers-browsers_4"
+          alt="Codecs, Containers, and Browsers"
+        >
           <Transformation
             width="800"
             height="600"

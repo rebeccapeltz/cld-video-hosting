@@ -1,5 +1,5 @@
 import Head from "next/head";
-import dynamic from "next/dynamic"; 
+import dynamic from "next/dynamic";
 import NavBar from "../components/NavBar";
 
 const DynamicVideo = dynamic(() => import("../components/CldABR"), {
@@ -11,7 +11,7 @@ export default function less_than_one_minute() {
     <div className="page">
       <Head>
         <title>Video Player with Cloudinary</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <header>
