@@ -1,11 +1,7 @@
 import Head from "next/head";
-import dynamic from "next/dynamic"; //add
 import NavBar from "../components/NavBar";
 import Iframe from "../components/Iframe";
 
-const Dynamic = dynamic(() => import("../components/Iframe"), {
-  ssr: false,
-});
 
 export default function IndexPage() {
   const code = `<iframe src="https://codesandbox.io/embed/cld-advanced-concepts-training-video-player-6h3k3?fontsize=14&hidenavigation=1&theme=light"
@@ -45,23 +41,10 @@ export default function IndexPage() {
       </p>
 
       <div className="sandbox ">
-        <Dynamic iframe={code} />`
+        <Iframe iframe={code} />`
       </div>
 
-      {/* <section className="container">
-        <div className="vp">
-          <h3>Less than 1 minute</h3>
-          <DynamicCldReact cloudName="cloudinary-training" publicId="surfing" />
-        </div>
-        <div className="vp">
-          <h3>30 Minutes</h3>
-          <DynamicCldReact cloudName="cloudinary-marketing" publicId="podcast/mx_matters/mx-matters-ep7-cli" />
-        </div>
-        <div className="vp">
-          <h3>Greater than 1 hour</h3>
-          <DynamicCldReact cloudName="cloudinary-marketing" publicId="podcast/devjams/ep4-alexpatterson-videoplayer" />
-        </div>
-      </section> */}
+     
     </div>
   );
 }

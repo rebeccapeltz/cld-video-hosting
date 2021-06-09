@@ -1,5 +1,5 @@
 import Head from "next/head";
-import dynamic from "next/dynamic"; //add
+import dynamic from "next/dynamic"; 
 import NavBar from "../components/NavBar";
 
 const DynamicCldReact = dynamic(() => import("../components/VideoEmbed"), {

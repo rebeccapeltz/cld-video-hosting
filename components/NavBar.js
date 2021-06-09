@@ -15,6 +15,11 @@ export default function NavBar(props) {
             </Link>
           </li>
           <li>
+            <Link href="/add_hd_profile">
+              <a className={props.navActive === "addhdprofile" ? "active" : ""}>HD Profile</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/video_embed_element">
               <a className={props.navActive === "videoembedelement" ? "active" : ""}>Video Embed Element</a>
             </Link>
