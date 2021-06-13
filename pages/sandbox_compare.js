@@ -1,5 +1,5 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar";
+import LeftNav from "../components/LeftNav";
 import Iframe from "../components/Iframe";
 
 export default function IndexPage() {
@@ -10,37 +10,41 @@ export default function IndexPage() {
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>`;
   return (
-    <div className="page">
-      <Head>
-        <title>Hosting Video</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+    <div>
+      <LeftNav navActive="sandboxcompare" />
 
-      <header>
-        <h1>Video Hosting</h1>
-        <NavBar navActive="sandboxcompare" />
-      </header>
-      <h2>Codesandbox: Hosting Video</h2>
-      <h3>Browser Video Embed Element vs Cloudinary Video Player</h3>
-      <p className="desc">
-        The video embed element is created by adding <em>source</em> tags with
-        different video containers within a <em>video</em> tag. We are using the
-        &nbsp;
-        <a
-          className="link"
-          href="https://cloudinary.com/documentation/react_integration"
-        >
-          Cloudinary React SDK
-        </a>{" "}
-        &npsp; to generate the element video embed element. The Cloudinary Video
-        Player is used to generate the video player component with the help of
-        the React
-        <strong>useEffect</strong> hook. This hook will tell React follow some
-        instructions after render.
-      </p>
+      <div className=" content">
+        <Head>
+          <title>Hosting Video</title>
+          <link rel="icon" href="/favicon.png" />
+        </Head>
 
-      <div className="sandbox ">
-        <Iframe iframe={code} />`
+        <header>
+          <h1>Video Hosting</h1>
+          {/* <NavBar navActive="sandboxcompare" /> */}
+        </header>
+        <h2>Codesandbox: Hosting Video</h2>
+        <h3>Browser Video Embed Element vs Cloudinary Video Player</h3>
+        <p className="desc">
+          The video embed element is created by adding <em>source</em> tags with
+          different video containers within a <em>video</em> tag. We are using
+          the &nbsp;
+          <a
+            className="link"
+            href="https://cloudinary.com/documentation/react_integration"
+          >
+            Cloudinary React SDK
+          </a>{" "}
+          &npsp; to generate the element video embed element. The Cloudinary
+          Video Player is used to generate the video player component with the
+          help of the React
+          <strong>useEffect</strong> hook. This hook will tell React follow some
+          instructions after render.
+        </p>
+
+        <div className="sandbox ">
+          <Iframe iframe={code} />`
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import NavBar from "../components/NavBar";
+import LeftNav from "../components/LeftNav";
 
 const DynamicVideo = dynamic(() => import("../components/CldABR"), {
   ssr: false,
@@ -8,22 +8,25 @@ const DynamicVideo = dynamic(() => import("../components/CldABR"), {
 
 export default function internet_archive() {
   return (
-    <div className="page">
-      <Head>
-        <title>Video Player with Cloudinary</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+    <div>
+      <LeftNav navActive="internetarchive" />
 
-      <header>
-        <h1>30 Minutes no ABR</h1>
-        <NavBar navActive="internetarchive" />
-      </header>
+      <div className="content">
+        <Head>
+          <title>Video Player with Cloudinary</title>
+          <link rel="icon" href="/favicon.png" />
+        </Head>
 
-      <div>
-        <DynamicVideo
-          cloudName="cloudinary-training"
-          publicId="Andy_Griffith_Barneys_First_Car_512kb"
-        />
+        <header>
+          <h1>30 Minutes no ABR</h1>
+        </header>
+
+        <div>
+          <DynamicVideo
+            cloudName="cloudinary-training"
+            publicId="Andy_Griffith_Barneys_First_Car_512kb"
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import NavBar from "../components/NavBar";
+import LeftNav from "../components/LeftNav";
 
 const DynamicCldReact = dynamic(() => import("../components/VideoEmbed"), {
   ssr: false,
@@ -8,14 +8,15 @@ const DynamicCldReact = dynamic(() => import("../components/VideoEmbed"), {
 
 export default function IndexPage() {
   return (
-    <div className="page">
+    <div> <LeftNav navActive="videoembedelement" />
+    <div className="content">
       <Head>
         <title>Video Player with Cloudinary</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <header>
         <h1>Video Hosting</h1>
-        <NavBar navActive="videoembedelement" />
+       
       </header>
       <h2>HTML5 Video Embed Element</h2>
       The Video embed element is created by adding <em>source</em> tags with
@@ -42,16 +43,8 @@ export default function IndexPage() {
             publicId="podcast/devjams/ep4-alexpatterson-videoplayer"
           />
         </div>
-
-        {/* <div className="nv">
-          <h3>Small Video ABR</h3>
-          <DynamicVideo cloudName="cloudinary-training" publicId="surfing" domId="vp3" />
-        </div>
-        <div className="nv">
-        <h3>Large Video ABR</h3>
-          <DynamicVideo cloudName="cloudinary-training" publicId="Andy_Griffith_Barneys_First_Car_512kb" domId="vp4"/>
-        </div> */}
       </section>
+    </div>
     </div>
   );
 }

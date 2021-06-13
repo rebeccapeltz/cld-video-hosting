@@ -12,3 +12,8 @@ https://www.netlify.com/blog/2020/11/30/how-to-deploy-next.js-sites-to-netlify/
 ```bash
 ntl init
 ```
+
+
+## Chrome Dev tools Media Player Panel
+
+https://developer.chrome.com/docs/devtools/media-panel/
