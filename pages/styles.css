@@ -63,19 +63,15 @@ li a:hover:not(.active) {
 
 .desc {
   width: 70%;
-  margin: 10px auto;
+  text-align: left;
   line-height: 1.5;
+  margin-left: 10rem;
 }
 
 .link {
   color: #f7bc00;
 }
 
-/* .page {
-  width: 90%;
-  margin: 10px auto;
-  text-align: center;
-} */
 
 .std {
   text-align: left;
@@ -96,7 +92,7 @@ li a:hover:not(.active) {
 .sidebar a {
   display: block;
   color: black;
-  padding: 16px;
+  padding: 10px;
   text-decoration: none;
 }
  
@@ -137,4 +133,26 @@ div.content {
 .large-image{
   width:80%;
   height: auto;
+}
+
+/* anchor */
+.test-links {
+  text-align: left;
+}
+.test-links a:link {
+  color: white;
+}
+.test-links a:visited {
+  color: goldenrod;
+}
+.test-links a:hover {
+  color: green;
+}
+.test-links  a:active {
+  color: white;
+}
+
+.flex-contain {
+  display: flex;
+  justify-content:center;
 }
