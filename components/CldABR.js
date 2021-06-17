@@ -8,7 +8,7 @@ const CldABR = (props) => {
 
   useEffect(() => {
     const options = {
-      sourceTypes: ["vp9","hls", "mp4"],
+      sourceTypes: ["hls", "mp4"],
       muted: true,
       controls: true,
       width: 800,
@@ -16,7 +16,7 @@ const CldABR = (props) => {
         hls: [{ streaming_profile: "hd" }],
         mp4: [{ quality: "auto" }],
       },
-      playbackRates: [0.5, 1, 1.5, 2]
+      playbackRates: [0.5, 1, 1.5, 2],
     };
     const videoPlayers = cld.videoPlayers(".cld-video-player", options);
     // {

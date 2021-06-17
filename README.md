@@ -17,3 +17,16 @@ ntl init
 ## Chrome Dev tools Media Player Panel
 
 https://developer.chrome.com/docs/devtools/media-panel/
+
+## Netlify functions
+Test locally
+```bash
+netlify dev
+```
+
+Locate where functions server is running 
+
+http://localhost:{functions server port}/.netlify/functions/test
+
+To test:
+postman: body raw {"name":"becky"}

@@ -25,6 +25,12 @@ export default function LeftNav(props) {
         </a>
       </Link>
 
+      <Link href="/upload">
+        <a className={props.navActive === "upload" ? "active" : ""}>
+          Upload
+        </a>
+      </Link>
+
       <Link href="/video_embed_element">
         <a className={props.navActive === "videoembedelement" ? "active" : ""}>
           Video Embed Element
