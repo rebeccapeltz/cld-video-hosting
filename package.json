@@ -8,6 +8,7 @@
     "post-update": "npm upgrade --latest"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.4.5",
     "cloudinary": "^1.25.2",
     "cloudinary-core": "2.11.3",
     "cloudinary-react": "1.7.0",
