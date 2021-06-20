@@ -1,0 +1,23 @@
+8:21:00 PM e66159b1 WARN   API key does not start with "SG.".
+8:21:01 PM e66159b1 ERROR  ResponseError: Unauthorized
+    at node_modules/@sendgrid/client/src/classes/client.js:146:29
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) {
+  code: 401,
+  response: {
+    headers: {
+      server: 'nginx',
+      date: 'Sun, 20 Jun 2021 03:21:01 GMT',
+      'content-type': 'application/json',
+      'content-length': '116',
+      connection: 'close',
+      'access-control-allow-origin': 'https://sendgrid.api-docs.io',
+      'access-control-allow-methods': 'POST',
+      'access-control-allow-headers': 'Authorization, Content-Type, On-behalf-of, x-sg-elas-acl',
+      'access-control-max-age': '600',
+      'x-no-cors-reason': 'https://sendgrid.com/docs/Classroom/Basics/API/cors.html',
+      'strict-transport-security': 'max-age=600; includeSubDomains'
+    },
+    body: { errors: [Array] }
+  }
+}
+8:21:01 PM e66159b1 Duration: 244.26 ms	Memory Usage: 74 MB	Init Duration: 146.88 ms

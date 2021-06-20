@@ -1,22 +1,30 @@
-exports.handler = function (event, context, callback) {
-  // using Twilio SendGrid's v3 Node.js Library
-  // https://github.com/sendgrid/sendgrid-nodejs
-  require("dotenv").config();
-  const sgMail = require("@sendgrid/mail");
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-  const msg = {
-    to: "rebeccapeltz@gmail.com", // Change to your recipient
-    from: "rebeccapeltz@gmail.com", // Change to your verified sender
-    subject: "Sending with SendGrid is Fun",
-    text: "and easy to do anywhere, even with Node.js",
-    html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+const client = require("@sendgrid/mail");
+require("dotenv").config();
+const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+const SENDGRID_TO_EMAIL = process.env.SENDGRID_TO_EMAIL;
+const SENDGRID_FROM_EMAIL = process.env.SENDGRID_FROM_EMAIL;
+
+exports.handler = async function (event, context, callback) {
+  const { message } = JSON.parse(event.body);
+  client.setApiKey(SENDGRID_API_KEY);
+
+  const data = {
+    to: SENDGRID_TO_EMAIL,
+    from: SENDGRID_FROM_EMAIL,
+    subject: `New message from sendgrid`,
+    html: message,
   };
-  sgMail
-    .send(msg)
-    .then(() => {
-      console.log("Email sent");
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+
+  try {
+    await client.send(data);
+    return {
+      statusCode: 200,
+      body: "Message sent",
+    };
+  } catch (err) {
+    return {
+      statusCode: err.code,
+      body: JSON.stringify({ msg: err.message }),
+    };
+  }
 };
