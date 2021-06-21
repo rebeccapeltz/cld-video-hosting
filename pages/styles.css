@@ -156,3 +156,13 @@ div.content {
   display: flex;
   justify-content:center;
 }
+
+.repl-contain{
+  background-color: gray;
+
+}
+.repl-contain h4{
+  padding: 1rem;
+  color: rgb(235, 222, 149);
+  font-size: 2rem;
+}
