@@ -5,8 +5,14 @@ const SENDGRID_TO_EMAIL = process.env.SENDGRID_TO_EMAIL;
 const SENDGRID_FROM_EMAIL = process.env.SENDGRID_FROM_EMAIL;
 
 exports.handler = async function (event, context, callback) {
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed!" };
+  } 
+
   const { message } = JSON.parse(event.body);
   client.setApiKey(SENDGRID_API_KEY);
+
+ 
 
   const data = {
     to: SENDGRID_TO_EMAIL,
@@ -24,7 +30,7 @@ exports.handler = async function (event, context, callback) {
   } catch (err) {
     return {
       statusCode: err.code,
-      body: JSON.stringify({ msg: err.message }),
+      body: JSON.stringify({ "msg": err}),
     };
   }
 };
