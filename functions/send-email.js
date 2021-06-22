@@ -10,6 +10,7 @@ exports.handler = async function (event, context, callback) {
   } 
 
   const { message } = JSON.parse(event.body);
+  console.log('message',message);
   client.setApiKey(SENDGRID_API_KEY);
 
  
@@ -18,7 +19,7 @@ exports.handler = async function (event, context, callback) {
     to: SENDGRID_TO_EMAIL,
     from: SENDGRID_FROM_EMAIL,
     subject: `New message from sendgrid`,
-    html: message,
+    html: JSON.stringify(message),
   };
 
   try {
@@ -30,7 +31,7 @@ exports.handler = async function (event, context, callback) {
   } catch (err) {
     return {
       statusCode: err.code,
-      body: JSON.stringify({ "msg": err}),
+      body: JSON.stringify({ "err": err,"status":err.code}),
     };
   }
 };
