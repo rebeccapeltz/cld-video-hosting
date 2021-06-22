@@ -10,7 +10,7 @@ exports.handler = async function (event, context, callback) {
   } 
 
   const { message } = JSON.parse(event.body);
-  console.log('message',message);
+  console.log('message',message); 
   client.setApiKey(SENDGRID_API_KEY);
 
  
@@ -26,7 +26,7 @@ exports.handler = async function (event, context, callback) {
     await client.send(data);
     return {
       statusCode: 200,
-      body: "Message sent",
+      body: JSON.stringify({ "sucess": "message sent"}),
     };
   } catch (err) {
     return {

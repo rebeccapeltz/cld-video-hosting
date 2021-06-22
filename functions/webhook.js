@@ -8,6 +8,8 @@ exports.handler = async function (event, context, callback) {
     return { statusCode: 405, body: "Method Not Allowed!" };
   }
 
+  // webhook creates a "message" object from incoming
+  // and sends to email as string
   const message = {"message":JSON.parse(event.body)};
   console.log('parsed message', message);
 
