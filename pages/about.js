@@ -18,6 +18,15 @@ export default function About() {
             This is a notebook to show different techniques and processes for
             hosting video on a web page.
           </p>
+          <p class="test-links">
+            GitHub Repo:{" "}
+            <a
+              href="https://github.com/rebeccapeltz/cld-video-hosting"
+              target="_blank"
+            >
+              cld-video-hosting
+            </a>
+          </p>
         </header>
       </div>
     </div>
