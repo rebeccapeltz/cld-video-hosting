@@ -30,3 +30,7 @@ http://localhost:{functions server port}/.netlify/functions/test
 
 To test:
 postman: body raw {"name":"becky"}
+
+## Credit
+Icon by <a href="https://freeicons.io/profile/3484">Becris</a> on <a href="https://freeicons.io">freeicons.io</a>
+    
