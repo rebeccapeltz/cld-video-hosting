@@ -15,7 +15,7 @@ export default function About() {
         <header>
           <h1>About</h1>
           <p className="std">
-            This is a sample application to show different techniques for
+            This is a notebook to show different techniques and processes for
             hosting video on a web page.
           </p>
         </header>

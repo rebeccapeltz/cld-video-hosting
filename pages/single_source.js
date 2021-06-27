@@ -19,8 +19,7 @@ export default function IndexPage() {
        
         <div className="desc">
         <p>
-          The single source video pre-dates the video embed element. What if the
-          source container provided isn't supported on your browser? 
+           What if the source container provided isn't supported on your browser? 
         </p>
         </div>
         <div>

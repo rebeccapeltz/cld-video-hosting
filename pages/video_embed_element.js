@@ -20,10 +20,13 @@ export default function IndexPage() {
       </header>
       <h2>HTML5 Video Embed Element</h2>
       The Video embed element is created by adding <em>source</em> tags with
-      different video containers within a <em>video</em> tag. We are using the
-      [Cloudinary React
-      SDK](https://cloudinary.com/documentation/react_integration) to generate
-      these element.
+      different video containers within a <em>video</em> tag. We are using the  <a
+            className="link"
+            href="https://cloudinary.com/documentation/react_integration"
+          >
+            Cloudinary React SDK
+          </a>{" "}
+       to generate these elements.
       <section className="vid-container">
         <div className="ve">
           <h3>Less than 1 minute</h3>

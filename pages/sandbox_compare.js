@@ -35,10 +35,9 @@ export default function IndexPage() {
           >
             Cloudinary React SDK
           </a>{" "}
-          &npsp; to generate the element video embed element. The Cloudinary
+          &nbsp; to generate the element video embed element. The Cloudinary
           Video Player is used to generate the video player component with the
-          help of the React
-          <strong>useEffect</strong> hook. This hook will tell React follow some
+          help of the React <strong>useEffect</strong> hook. This hook will tell React follow some
           instructions after render.
         </p>
 
