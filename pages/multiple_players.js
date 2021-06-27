@@ -14,7 +14,7 @@ export default function MultiplePlayers() {
       <div className="content">
         <Head>
           <title>Multiple Video Players</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
 
         <header>

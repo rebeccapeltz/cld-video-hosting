@@ -9,18 +9,19 @@ export default function IndexPage() {
       <div className=" content">
         <Head>
           <title>Hosting Video</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
 
         <header>
           <h1>Video Hosting</h1>
         </header>
         <h2>Single Source: Experiment with Codecs, Containers, Browsers</h2>
-       
+
         <div className="desc">
-        <p>
-           What if the source container provided isn't supported on your browser? 
-        </p>
+          <p>
+            What if the source container provided isn't supported on your
+            browser?
+          </p>
         </div>
         <div>
           <section className="flex-contain">

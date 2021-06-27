@@ -16,7 +16,7 @@ export default function IndexPage() {
       <div className=" content">
         <Head>
           <title>Hosting Video</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
 
         <header>
@@ -37,8 +37,8 @@ export default function IndexPage() {
           </a>{" "}
           &nbsp; to generate the element video embed element. The Cloudinary
           Video Player is used to generate the video player component with the
-          help of the React <strong>useEffect</strong> hook. This hook will tell React follow some
-          instructions after render.
+          help of the React <strong>useEffect</strong> hook. This hook will tell
+          React follow some instructions after render.
         </p>
 
         <div className="sandbox ">

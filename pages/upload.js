@@ -17,7 +17,7 @@ export default function UploadPage() {
       <div className="content">
         <Head>
           <title>Hosting Video</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
 
         <header>
@@ -55,7 +55,6 @@ export default function UploadPage() {
             <Iframe iframe={codespotlight} />`
           </div>
         </div>
-
       </div>
     </div>
   );

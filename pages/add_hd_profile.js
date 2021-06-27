@@ -11,7 +11,7 @@ export default function IndexPage() {
       <div className="content">
         <Head>
           <title>Hosting Video</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
 
         <header>

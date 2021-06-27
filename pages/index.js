@@ -11,7 +11,7 @@ export default function IndexPage() {
       <div className="content">
         <Head>
           <title>Hosting Video</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
 
         <header>
@@ -23,9 +23,10 @@ export default function IndexPage() {
         <p className="desc">
           The graphic helps to show the relationship between codec, containers,
           and browsers.
-        </p> 
+        </p>
         <CloudinaryContext cloud_name="cloudinary-training" secure="true">
-          <Image className="large-image"
+          <Image
+            className="large-image"
             publicId="video-hosting/codes-containers-browsers_4"
             alt="Codecs, Containers, and Browsers"
           >

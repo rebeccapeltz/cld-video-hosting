@@ -11,7 +11,7 @@ export default function less_than_one_minute() {
     <div className="page">
       <Head>
         <title>Video Player with Cloudinary</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
 
       <header>

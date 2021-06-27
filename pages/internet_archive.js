@@ -14,7 +14,7 @@ export default function internet_archive() {
       <div className="content">
         <Head>
           <title>Video Player with Cloudinary</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
 
         <header>

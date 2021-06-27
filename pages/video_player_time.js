@@ -13,7 +13,7 @@ export default function IndexPage() {
       <div className="content">
         <Head>
           <title>Video Player with Cloudinary</title>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/images/favicon.ico" />
         </Head>
         <header>
           <h1>Video Hosting</h1>
