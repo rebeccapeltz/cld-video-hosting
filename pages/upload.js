@@ -3,13 +3,13 @@ import LeftNav from "../components/LeftNav";
 import Iframe from "../components/Iframe";
 
 export default function UploadPage() {
-  const code = `<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@rpeltz/cld-upload-node?lite=true"></iframe>
+  const code = `<iframe frameborder="0"  style="style="position: relative; height: 100%; width: 100%;"  src="https://replit.com/@rpeltz/cld-upload-node?lite=true"></iframe>
   `;
-  const codeoutputonly = `<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@rpeltz/cld-upload-node?lite=true&outputonly=1"></iframe>
+  const codeoutputonly = `<iframe frameborder="0"  style="style="position: relative; height: 100%; width: 100%;"  src="https://replit.com/@rpeltz/cld-upload-node?lite=true&outputonly=1"></iframe>
   `;
-  const codespotlight = `<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@rpeltz/cld-upload-node?embed=true"></iframe>
+  const codespotlight = `<iframe frameborder="0"  style="style="position: relative; height: 100%; width: 100%;"  src="https://replit.com/@rpeltz/cld-upload-node?embed=true"></iframe>
   `;
-  const codespotlightoutputonlye = `<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@rpeltz/cld-upload-node?embed=true&outputonly=1"></iframe>
+  const codespotlightoutputonlye = `<iframe frameborder="0"  style="style="position: relative; height: 100%; width: 100%;"  height="500px" src="https://replit.com/@rpeltz/cld-upload-node?embed=true&outputonly=1"></iframe>
   `;
   return (
     <div>
@@ -30,30 +30,22 @@ export default function UploadPage() {
         </p>
         <div className="repl-contain">
           <h4>lite=true</h4>
-          <div className="sandbox ">
-            <Iframe iframe={code} />`
-          </div>
+          <Iframe iframe={code} />`
         </div>
 
         <div className="repl-contain">
           <h4>lite=true and outputonly=1</h4>
-          <div className="sandbox ">
-            <Iframe iframe={codeoutputonly} />`
-          </div>
+          <Iframe iframe={codeoutputonly} />`
         </div>
 
         <div className="repl-contain">
           <h4>embed=true</h4>
-          <div className="sandbox ">
-            <Iframe iframe={codespotlight} />`
-          </div>
+          <Iframe iframe={codespotlight} />`
         </div>
 
         <div className="repl-contain">
           <h4>embed=true and outputonly=1</h4>
-          <div className="sandbox ">
-            <Iframe iframe={codespotlight} />`
-          </div>
+          <Iframe iframe={codespotlight} />`
         </div>
       </div>
     </div>

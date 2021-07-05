@@ -4,21 +4,20 @@ import Iframe from "../components/Iframe";
 
 export default function IndexPage() {
   const code = `<iframe src="https://codesandbox.io/embed/cld-advanced-concepts-training-video-player-6h3k3?fontsize=14&hidenavigation=1&theme=light"
-  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  style="style="position: relative; height: 100%; width: 100%;" 
   title="cld-advanced-concepts-training-video-player"
   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>`;
   return (
     <div>
+      <Head>
+        <title>Hosting Video</title>
+        <link rel="icon" href="/images/favicon.ico" />
+      </Head>
       <LeftNav navActive="sandboxcompare" />
 
-      <div className=" content">
-        <Head>
-          <title>Hosting Video</title>
-          <link rel="icon" href="/images/favicon.ico" />
-        </Head>
-
+      <div className="content">
         <header>
           <h1>Video Hosting</h1>
           {/* <NavBar navActive="sandboxcompare" /> */}
@@ -40,10 +39,7 @@ export default function IndexPage() {
           help of the React <strong>useEffect</strong> hook. This hook will tell
           React follow some instructions after render.
         </p>
-
-        <div className="sandbox ">
-          <Iframe iframe={code} />`
-        </div>
+        <Iframe iframe={code} />`
       </div>
     </div>
   );

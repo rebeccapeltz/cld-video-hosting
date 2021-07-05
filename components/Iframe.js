@@ -2,7 +2,7 @@
 
 export default function Iframe(props) {
   return (
-    <div
+    <div className="sandbox" 
       dangerouslySetInnerHTML={{ __html: props.iframe ? props.iframe : "" }}
     />
   );

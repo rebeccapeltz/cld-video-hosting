@@ -3,7 +3,7 @@ import LeftNav from "../components/LeftNav";
 import Iframe from "../components/Iframe";
 
 export default function IndexPage() {
-  const code = `<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@rpeltz/ABR-hd-profile?lite=true"></iframe>
+  const code = `<iframe frameborder="0" width="100%" height="500px"  src="https://replit.com/@rpeltz/ABR-hd-profile?lite=true"></iframe>
   `;
   return (
     <div>
@@ -25,9 +25,7 @@ export default function IndexPage() {
           Advanced Bitrate streaming.
         </p>
 
-        <div className="sandbox ">
           <Iframe iframe={code} />`
-        </div>
       </div>
     </div>
   );
